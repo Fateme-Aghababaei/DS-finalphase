@@ -1,0 +1,91 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :::p, par t {comp lblBack::l:p:40:p, seq l {space :p:6:p, par l {seq {comp lblProfilePhoto:::p:150:p, space :::p, par l {comp lblID:::p:204:p, comp lblName:::p:204:p, seq l {space :p:29:p, comp btnConnect:::p:150:p}}}, seq {space :6:6:p, par l {comp lblSpecialties::l:::x, seq {par l {comp lblBirthDate:::p:355:p, comp lblUni::l:p:355:p, comp lblField::l:p:355:p, comp lblWorkPlace::l:p:355:p, comp scrollPane1::l:p:355:p}, space :0:0:x}}}}}}, space :p:21:p}, seq l {space :p:118:p, par l {comp btnSuggestions:::p:150:p, comp btnConnections:::p:150:p}, space :0:0:x}}"
+			"$verticalGroup": "par l {seq {space :::p, comp lblBack:::p:40:p, par l {seq l {space :::p, comp lblProfilePhoto:::p:150:p}, seq l {space :p:30:p, comp lblID:::p::p, space s:::p, comp lblName:::p::p, space u:::p, comp btnConnect:::p:50:p}}, space :::p, comp lblBirthDate:::p:40:p, space :p:2:p, comp lblUni:::p:40:p, space :::p, comp lblField:::p:40:p, space :::p, comp lblWorkPlace:::p:40:p, space :::p, comp lblSpecialties:::p:40:p, space :::p, comp scrollPane1:::p:88:p, space s:::p, comp btnConnections:::p:50:p, space :::p, comp btnSuggestions:::p:50:p, space ::16:x}}"
+		} ) {
+			name: "this"
+			"minimumSize": new java.awt.Dimension( 400, 700 )
+			"resizable": false
+			"title": "Profile"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\final\\finalproject-Fateme-Aghababaei\\linkedin-icon.png" )
+			"defaultCloseOperation": 3
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBack"
+				"background": new java.awt.Color( 214, 217, 223, 255 )
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\final\\finalproject-Fateme-Aghababaei\\back.png" )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lblBackMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblProfilePhoto"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "E:\\Uni\\Data Structures\\Projects\\final\\finalproject-Fateme-Aghababaei\\profile.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblID"
+				"text": "ID"
+				"font": &Font0 new java.awt.Font( "Calibri", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblName"
+				"text": "Name"
+				"font": #Font0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBirthDate"
+				"text": "Date of Birth: "
+				"font": &Font1 new java.awt.Font( "Calibri", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblSpecialties"
+				"text": "Specialties:"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblWorkPlace"
+				"text": "Work Place: "
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblField"
+				"text": "Field: "
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblUni"
+				"text": "University Location:"
+				"font": #Font1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnConnect"
+				"text": "Connect"
+				"font": &Font2 new java.awt.Font( "Calibri", 0, 20 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnConnectActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "listSpecialties"
+					"font": new java.awt.Font( "Calibri", 0, 18 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnConnections"
+				"text": "Connections"
+				"font": #Font2
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnConnectionsActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSuggestions"
+				"text": "Suggestions"
+				"font": #Font2
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSuggestionsActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 700 )
+		} )
+	}
+}
